@@ -1,0 +1,86 @@
+.team {
+  padding: 260px 0 110px;
+
+  @media (min-width: 768px) {
+    padding: 192px 0 124px;
+  }
+
+  &__text {
+    font-size: 15px;
+    line-height: 175%;
+    text-align: center;
+    color: #1E1A20;
+    opacity: 0.9;
+
+    @media (min-width: 768px) {
+      font-size: 18px;
+      line-height: 32px;
+    }
+  }
+
+  &__img-block {
+    margin-top: 40px;
+    position: relative;
+
+    @media (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__person {
+    max-width: 200px;
+    margin-bottom: 20px;
+
+    &--2 {
+      margin-left: auto;
+      display: block;
+
+      @media (min-width: 768px) {
+        margin-left: 0;
+        margin-top: 50px;
+      }
+    }
+
+    @media (min-width: 1200px) {
+      max-width: initial;
+    }
+  }
+
+  &__connect {
+    position: absolute;
+    max-width: 230px;
+    z-index: -1;
+
+    &--1 {
+      transform: rotate(40deg);
+      top: 80px;
+      left: 100px;
+
+      @media (min-width: 768px) {
+        transform: rotate(0deg);
+        left: 19%;
+      }
+
+      @media (min-width: 1200px) {
+        left: 23%;
+      }
+    }
+
+    &--2 {
+      transform: rotate(-80deg);
+      left: -10px;
+      top: 300px;
+
+      @media (min-width: 768px) {
+        transform: rotate(172deg);
+        top: 34%;
+        left: 57%;
+      }
+
+      @media (min-width: 1200px) {
+        left: 62%;
+      }
+    }
+  }
+}

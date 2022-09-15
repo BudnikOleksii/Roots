@@ -1,0 +1,62 @@
+.login-form {
+  padding: 40px 24px;
+  background-color: #F7F3F4;
+  border-radius: 16px;
+  width: 100%;
+  position: relative;
+
+  &__heading {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    text-transform: capitalize;
+    text-align: center;
+  }
+
+  &__field {
+    height: 48px;
+    display: block;
+    margin-top: 16px;
+  }
+
+  &__input {
+    height: 100%;
+    width: 100%;
+    padding-left: 24px;
+    border: 1px solid transparent;
+    border-radius: 40px;
+    background-color: #fff;
+    outline: none;
+    transition: color 0.4s, border-color 0.4s;
+
+    &--invalid {
+      border-color: red;
+    }
+
+    &::placeholder {
+      font-size: 14px;
+      line-height: 24px;
+      color: #807C7C;
+    }
+  }
+
+  &__shape {
+    position: absolute;
+
+    &--1 {
+      left: 93%;
+      top: -5%;
+      max-width: 40px;
+    }
+
+    &--2 {
+      left: 96%;
+      top: 10%;
+      max-width: 30px;
+    }
+  }
+}
+
+.mb-32 {
+  margin-bottom: 32px;
+}

@@ -9,4 +9,11 @@
   line-height: 140%;
   letter-spacing: 1px;
   text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.4s, box-shadow 0.4s;
+
+  &:hover {
+    background-color: darken(#F2726C, 10%);
+    box-shadow: 0 10px 10px rgba(#F2726C, 0.5);
+  }
 }

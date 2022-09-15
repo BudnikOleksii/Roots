@@ -1,0 +1,31 @@
+.section-form {
+  background: #FFBD9E;
+  border-radius: 20px;
+  margin: 0 -18px;
+  padding: 42px 18px 56px;
+
+  @media (min-width: 768px) {
+    display: flex;
+    gap: 20px;
+  }
+
+  @media (min-width: 1200px) {
+    margin: 0;
+    padding: 104px 104px 104px 82px;
+    gap: 120px;
+  }
+
+  &__text-block {
+    @media (min-width: 768px) {
+      max-width: 50%;
+    }
+
+    @media (min-width: 1200px) {
+      max-width: 40%;
+    }
+  }
+
+  &__text {
+    margin: 20px 0 55px 26px;
+  }
+}

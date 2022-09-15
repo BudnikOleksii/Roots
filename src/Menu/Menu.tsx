@@ -16,7 +16,7 @@ export const Menu: FC = () => {
           <a href="#" className="menu__link">Places</a>
         </li>
         <li className="menu__item">
-          <a href="#" className="menu__link">Team</a>
+          <a href="#team" className="menu__link">Team</a>
         </li>
       </ul>
 

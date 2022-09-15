@@ -12,8 +12,6 @@ export const LoginForm: FC = () => {
   const [isLoginValid, setIsLoginValid] = useState(true);
   const [isEmailValid, setIsEmailValid] = useState(true);
 
-  console.log(isEmailValid);
-
   return (
     <form className="login-form">
       <h3 className="login-form__heading">Log in</h3>

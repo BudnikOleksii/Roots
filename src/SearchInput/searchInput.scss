@@ -1,0 +1,31 @@
+.searchInput {
+  padding: 8px;
+  width: 100%;
+  height: 64px;
+  background: #fff;
+  box-shadow: 0 20px 20px rgba(240, 101, 126, 0.05);
+  border-radius: 40px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__icon {
+    position: absolute;
+    margin-left: 17px;
+  }
+
+  &__input {
+    width: 100%;
+    padding-left: 59px;
+    border-color: transparent;
+    outline: none;
+
+    &::placeholder {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      color: #807C7C;
+    }
+  }
+}

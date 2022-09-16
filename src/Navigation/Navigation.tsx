@@ -32,7 +32,10 @@ export const Navigation: FC = () => {
 
       <div className="divider"></div>
 
-      <Menu additionalClasses={`menu--mobile ${isMenuOpen ? 'menu--active' : ''}`} />
+      <Menu
+        additionalClasses={`menu--mobile ${isMenuOpen ? 'menu--active' : ''}`}
+        onClose={setIsMenuOpen}
+      />
     </nav>
   );
 };

@@ -4,7 +4,7 @@ import { SwiperSlider } from '../SwiperSlider';
 
 export const SectionPlaces: FC = () => {
   return (
-    <section className="places">
+    <section className="places" id="places">
       <SwiperSlider />
     </section>
   );

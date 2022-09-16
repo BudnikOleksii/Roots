@@ -8,7 +8,7 @@ export const SearchInput: FC = () => {
 
   return (
     <div className="searchInput">
-      <label htmlFor="search-input">
+      <label className="searchInput__label" htmlFor="search-input">
         <img className="searchInput__icon" src={locationIcon} alt="location-icon" />
         <input
           id="search-input"

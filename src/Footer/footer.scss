@@ -6,6 +6,10 @@
     justify-content: space-between;
   }
 
+  @media (min-width: 1024px) {
+    padding: 107px 0;
+  }
+
   &__heading-block {
     margin-bottom: 33px;
 

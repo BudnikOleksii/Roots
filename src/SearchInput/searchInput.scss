@@ -10,6 +10,13 @@
   justify-content: space-between;
   align-items: center;
 
+  &__label {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
   &__icon {
     position: absolute;
     margin-left: 17px;

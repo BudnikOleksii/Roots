@@ -22,11 +22,12 @@
     font-size: 15px;
     line-height: 175%;
     color: #1E1A20;
-    opacity: 0.9;
-    transition: max-height 0.4s;
+    opacity: 0;
+    transition: max-height 0.4s, opacity 0.4s;
 
     &--active {
       max-height: max-content;
+      opacity: 0.9;
     }
   }
 
@@ -53,5 +54,11 @@
     &--active {
       transform: rotate(90deg);
     }
+  }
+
+  &__divider {
+    height: 1px;
+    margin: 24px 0;
+    background-color: #1E1A20;
   }
 }

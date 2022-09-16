@@ -27,9 +27,12 @@ export const AccordionComponent: FC<Props> = ({ heading, text }) => {
           </div>
         </button>
       </div>
+
       <p className={classNames('accordion__text', { 'accordion__text--active': accordionOpen })}>
         {text}
       </p>
+
+      <div className="accordion__divider"></div>
     </div>
   );
 };

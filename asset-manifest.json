@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "./static/css/main.bd4fae52.chunk.css",
-    "main.js": "./static/js/main.974cc70c.chunk.js",
-    "main.js.map": "./static/js/main.974cc70c.chunk.js.map",
+    "main.css": "./static/css/main.c0798dff.chunk.css",
+    "main.js": "./static/js/main.886015cd.chunk.js",
+    "main.js.map": "./static/js/main.886015cd.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.8c9895b1.js",
     "runtime-main.js.map": "./static/js/runtime-main.8c9895b1.js.map",
-    "static/js/2.1fce09c5.chunk.js": "./static/js/2.1fce09c5.chunk.js",
-    "static/js/2.1fce09c5.chunk.js.map": "./static/js/2.1fce09c5.chunk.js.map",
+    "static/js/2.4f61dd98.chunk.js": "./static/js/2.4f61dd98.chunk.js",
+    "static/js/2.4f61dd98.chunk.js.map": "./static/js/2.4f61dd98.chunk.js.map",
     "index.html": "./index.html",
-    "static/css/main.bd4fae52.chunk.css.map": "./static/css/main.bd4fae52.chunk.css.map",
-    "static/js/2.1fce09c5.chunk.js.LICENSE.txt": "./static/js/2.1fce09c5.chunk.js.LICENSE.txt",
+    "static/css/main.c0798dff.chunk.css.map": "./static/css/main.c0798dff.chunk.css.map",
+    "static/js/2.4f61dd98.chunk.js.LICENSE.txt": "./static/js/2.4f61dd98.chunk.js.LICENSE.txt",
     "static/media/header.scss": "./static/media/CardBG.5bdd08dc.svg",
     "static/media/Headline.08329e54.svg": "./static/media/Headline.08329e54.svg",
     "static/media/Logo.e69889af.svg": "./static/media/Logo.e69889af.svg",
@@ -25,8 +25,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.8c9895b1.js",
-    "static/js/2.1fce09c5.chunk.js",
-    "static/css/main.bd4fae52.chunk.css",
-    "static/js/main.974cc70c.chunk.js"
+    "static/js/2.4f61dd98.chunk.js",
+    "static/css/main.c0798dff.chunk.css",
+    "static/js/main.886015cd.chunk.js"
   ]
 }

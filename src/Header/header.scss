@@ -1,5 +1,6 @@
 .header {
   background-color: #F7F3F4;
+  overflow-x: hidden;
 
   @media (min-width: 1024px) {
     padding-bottom: 128px;
@@ -7,6 +8,7 @@
 
   &__content {
     margin-top: 70px;
+    //overflow-x: hidden;
 
     @media (min-width: 1024px) {
       display: flex;

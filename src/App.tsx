@@ -3,6 +3,7 @@ import './App.scss';
 import { Header } from './Header';
 import { TeamSection } from './TeamSection';
 import { SectionForm } from './SectionForm';
+import { SectionOurMission } from './SectionOurMission';
 
 export const App: React.FC = () => {
   return (
@@ -12,6 +13,8 @@ export const App: React.FC = () => {
       <TeamSection />
 
       <SectionForm />
+
+      <SectionOurMission />
     </div>
   );
 };

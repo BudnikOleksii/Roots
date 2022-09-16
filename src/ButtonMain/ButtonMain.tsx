@@ -3,15 +3,15 @@ import './buttonMain.scss';
 
 interface Props {
   text: string;
-  width: string;
+  currentWidth: string;
   onClick?: () => void;
 }
 
-export const ButtonMain: FC<Props> = ({ text, width, onClick = () => {} }) => (
+export const ButtonMain: FC<Props> = ({ text, currentWidth, onClick = () => {} }) => (
   <button
     className="button"
     type="button"
-    style={{ width }}
+    style={{ width: currentWidth }}
     onClick={onClick}
   >
     {text}

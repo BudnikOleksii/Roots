@@ -20,7 +20,7 @@ export const SearchInput: FC = () => {
         />
       </label>
 
-      <ButtonMain text="search" width="100px" onClick={() => {}} />
+      <ButtonMain text="search" currentWidth="100px" onClick={() => {}} />
     </div>
   );
 };

@@ -1,0 +1,57 @@
+.accordion {
+  overflow: hidden;
+
+  &__main-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+
+  &__heading {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: #1E1A20;
+    opacity: 0.9;
+  }
+
+  &__text {
+    max-height: 0;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 175%;
+    color: #1E1A20;
+    opacity: 0.9;
+    transition: max-height 0.4s;
+
+    &--active {
+      max-height: max-content;
+    }
+  }
+
+  &__button {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-color: #F2726C;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  &__line {
+    position: absolute;
+    width: 14px;
+    height: 2px;
+    background-color: #fff;
+    transition: transform 0.4s;
+
+    &--active {
+      transform: rotate(90deg);
+    }
+  }
+}

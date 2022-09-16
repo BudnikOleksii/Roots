@@ -2,15 +2,19 @@
 import { FC } from 'react';
 import './menu.scss';
 
-export const Menu: FC = () => {
+interface Props {
+  additionalClasses?: string;
+}
+
+export const Menu: FC<Props> = ({ additionalClasses }) => {
   return (
-    <div className="menu">
+    <div className={`menu ${additionalClasses}`}>
       <ul className="menu__list">
         <li className="menu__item">
           <a href="#" className="menu__link menu__link--home">Home</a>
         </li>
         <li className="menu__item">
-          <a href="#" className="menu__link">Our mission</a>
+          <a href="#mission" className="menu__link">Our mission</a>
         </li>
         <li className="menu__item">
           <a href="#" className="menu__link">Places</a>

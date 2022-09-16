@@ -1,6 +1,5 @@
 import { FC, useState } from 'react';
 import classNames from 'classnames';
-import { CSSTransition } from 'react-transition-group';
 import logo from './Logo.svg';
 import { Menu } from '../Menu';
 import './navigation.scss';
@@ -33,14 +32,7 @@ export const Navigation: FC = () => {
 
       <div className="divider"></div>
 
-      <CSSTransition
-        in={isMenuOpen}
-        classNames="slide"
-        timeout={300}
-      >
-        <>{isMenuOpen && <Menu />}</>
-      </CSSTransition>
-
+      <Menu additionalClasses={`menu--mobile ${isMenuOpen ? 'menu--active' : ''}`} />
     </nav>
   );
 };

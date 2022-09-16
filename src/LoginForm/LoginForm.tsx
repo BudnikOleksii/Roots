@@ -58,7 +58,7 @@ export const LoginForm: FC = () => {
         />
       </label>
 
-      <ButtonMain text="Book a demo" width="100%" />
+      <ButtonMain text="Book a demo" currentWidth="100%" />
     </form>
   );
 };

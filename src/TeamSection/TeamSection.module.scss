@@ -31,9 +31,15 @@
   &__person {
     max-width: 200px;
     margin-bottom: 20px;
+    transition: transform 0.4s;
+    cursor: pointer;
 
     @media (min-width: 1200px) {
       max-width: initial;
+    }
+
+    &:hover {
+      transform: scale(1.1);
     }
   }
 

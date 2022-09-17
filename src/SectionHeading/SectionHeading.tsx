@@ -1,12 +1,12 @@
 import { FC } from 'react';
-import './sectionHeading.scss';
+import styles from './SectionHeading.module.scss';
 
 type Props = {
   text: string;
 };
 
 export const SectionHeading: FC<Props> = ({ text }) => (
-  <h2 className="section-heading">
+  <h2 className={styles.sectionHeading}>
     {text}
   </h2>
 );

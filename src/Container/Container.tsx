@@ -1,8 +1,8 @@
 import { FC } from 'react';
-import './container.scss';
+import styles from './Container.module.scss';
 
 export const Container: FC = ({ children }) => (
-  <div className="container">
+  <div className={styles.container}>
     {children}
   </div>
 );

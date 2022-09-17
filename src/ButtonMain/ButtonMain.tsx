@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import './buttonMain.scss';
+import styles from './buttonMain.module.scss';
 
 interface Props {
   text: string;
@@ -9,7 +9,7 @@ interface Props {
 
 export const ButtonMain: FC<Props> = ({ text, currentWidth, onClick = () => {} }) => (
   <button
-    className="button"
+    className={styles.button}
     type="button"
     style={{ width: currentWidth }}
     onClick={onClick}

@@ -5,6 +5,7 @@ import { Navigation, Pagination } from 'swiper';
 import 'swiper/swiper.scss';
 import 'swiper/modules/navigation/navigation.scss';
 import 'swiper/modules/pagination/pagination.scss';
+import styles from './Slider.module.scss';
 import water from './img-main.png';
 import trees from './img-1.png';
 import energy from './img-2.png';
@@ -46,33 +47,33 @@ export const SwiperSlider: FC = () => {
         className="mySwiper"
       >
         <SwiperSlide>
-          <div className="slide slide--main">
+          <div className={styles.slide}>
             <img src={water} alt="water" />
-            <h4 className="slide__heading">Save watter</h4>
+            <h4 className={styles.slide__heading}>Save watter</h4>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="slide">
+          <div className={styles.slide}>
             <img src={trees} alt="trees" />
-            <h4 className="slide__heading">Plant trees</h4>
+            <h4 className={styles.slide__heading}>Plant trees</h4>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="slide">
+          <div className={styles.slide}>
             <img src={energy} alt="energy" />
-            <h4 className="slide__heading">Save energy</h4>
+            <h4 className={styles.slide__heading}>Save energy</h4>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="slide">
+          <div className={styles.slide}>
             <img src={plastic} alt="plastic" />
-            <h4 className="slide__heading">Avoid plastic</h4>
+            <h4 className={styles.slide__heading}>Avoid plastic</h4>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="slide">
+          <div className={styles.slide}>
             <img src={organic} alt="organic" />
-            <h4 className="slide__heading">Choose organic</h4>
+            <h4 className={styles.slide__heading}>Choose organic</h4>
           </div>
         </SwiperSlide>
       </Swiper>

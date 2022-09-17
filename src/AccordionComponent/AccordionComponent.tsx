@@ -1,6 +1,6 @@
 import { FC, useState } from 'react';
-import './accordionComponent.scss';
 import classNames from 'classnames';
+import styles from './AccordionComponent.module.scss';
 
 type Props = {
   heading: string;
@@ -11,28 +11,31 @@ export const AccordionComponent: FC<Props> = ({ heading, text }) => {
   const [accordionOpen, setAccordionOpen] = useState(false);
 
   return (
-    <div className="accordion">
-      <div className="accordion__main-block">
-        <h3 className="accordion__heading">{heading}</h3>
+    <div className={styles.accordion}>
+      <div className={styles.accordion__mainBlock}>
+        <h3 className={styles.accordion__heading}>{heading}</h3>
         <button
           type="button"
-          className="accordion__button"
+          className={styles.accordion__button}
           onClick={() => setAccordionOpen(prev => !prev)}
         >
-          <div className="accordion__line"></div>
-          <div className={classNames('accordion__line', {
-            'accordion__line--active': accordionOpen,
+          <div className={styles.accordion__line}></div>
+          <div className={classNames(`${styles.accordion__line}`, {
+            [`${styles.accordion__lineActive}`]: accordionOpen,
           })}
           >
           </div>
         </button>
       </div>
 
-      <p className={classNames('accordion__text', { 'accordion__text--active': accordionOpen })}>
+      <p className={classNames(`${styles.accordion__text}`, {
+        [`${styles.accordion__textActive}`]: accordionOpen,
+      })}
+      >
         {text}
       </p>
 
-      <div className="accordion__divider"></div>
+      <div className={styles.accordion__divider}></div>
     </div>
   );
 };

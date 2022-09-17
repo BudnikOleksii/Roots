@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { Dispatch, FC, SetStateAction } from 'react';
-import './menu.scss';
+import styles from './Menu.module.scss';
 
 interface Props {
   additionalClasses?: string;
@@ -9,39 +9,39 @@ interface Props {
 
 export const Menu: FC<Props> = ({ additionalClasses, onClose = () => {} }) => {
   return (
-    <div className={`menu ${additionalClasses}`}>
-      <ul className="menu__list">
-        <li className="menu__item">
+    <div className={`${styles.menu} ${additionalClasses}`}>
+      <ul className={styles.menu__list}>
+        <li className={styles.menu__item}>
           <a
             href="#"
-            className="menu__link menu__link--home"
+            className={`${styles.menu__link} ${styles.menu__linkHome}`}
             onClick={() => onClose(false)}
           >
             Home
           </a>
         </li>
-        <li className="menu__item">
+        <li className={styles.menu__item}>
           <a
             href="#mission"
-            className="menu__link"
+            className={styles.menu__link}
             onClick={() => onClose(false)}
           >
             Our mission
           </a>
         </li>
-        <li className="menu__item">
+        <li className={styles.menu__item}>
           <a
             href="#places"
-            className="menu__link"
+            className={styles.menu__link}
             onClick={() => onClose(false)}
           >
             Places
           </a>
         </li>
-        <li className="menu__item">
+        <li className={styles.menu__item}>
           <a
             href="#team"
-            className="menu__link"
+            className={styles.menu__link}
             onClick={() => onClose(false)}
           >
             Team
@@ -49,7 +49,7 @@ export const Menu: FC<Props> = ({ additionalClasses, onClose = () => {} }) => {
         </li>
       </ul>
 
-      <button type="button" className="menu__btn">Apply</button>
+      <button type="button" className={styles.menu__btn}>Apply</button>
     </div>
   );
 };

@@ -1,4 +1,4 @@
-.login-form {
+.loginForm {
   padding: 40px 24px;
   background-color: #F7F3F4;
   border-radius: 16px;
@@ -29,10 +29,6 @@
     outline: none;
     transition: color 0.4s, border-color 0.4s;
 
-    &--invalid {
-      border-color: red;
-    }
-
     &::placeholder {
       font-size: 14px;
       line-height: 24px;
@@ -40,23 +36,25 @@
     }
   }
 
-  &__shape {
+  &__inputInvalid {
+    border-color: red;
+  }
+
+  &__shapeFirst {
     position: absolute;
+    left: 93%;
+    top: -5%;
+    max-width: 40px;
+  }
 
-    &--1 {
-      left: 93%;
-      top: -5%;
-      max-width: 40px;
-    }
-
-    &--2 {
-      left: 96%;
-      top: 10%;
-      max-width: 30px;
-    }
+  &__shapeSecond {
+    position: absolute;
+    left: 96%;
+    top: 10%;
+    max-width: 30px;
   }
 }
 
-.mb-32 {
+.mb32 {
   margin-bottom: 32px;
 }

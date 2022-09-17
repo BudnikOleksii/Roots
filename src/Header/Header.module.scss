@@ -8,7 +8,6 @@
 
   &__content {
     margin-top: 70px;
-    //overflow-x: hidden;
 
     @media (min-width: 1024px) {
       display: flex;
@@ -16,7 +15,7 @@
     }
   }
 
-  &__text-block {
+  &__textBlock {
     @media (min-width: 768px) {
       max-width: 70%;
       margin: 0 auto;
@@ -32,7 +31,7 @@
     color: transparent;
   }
 
-  &__title-img {
+  &__titleImg {
     max-width: 100%;
 
     @media (min-width: 1024px) {
@@ -40,7 +39,7 @@
     }
   }
 
-  &__title-text {
+  &__titleText {
     position: absolute;
     left: -100%;
   }
@@ -51,7 +50,7 @@
     margin-bottom: 40px;
   }
 
-  &__parrot-block {
+  &__parrotBlock {
     position: relative;
     padding-bottom: 150px;
 
@@ -88,25 +87,25 @@
     background-position: center;
     border-radius: 30px;
     transform: translateY(85%);
+  }
 
-    &-icon {
-      width: 33px;
-    }
+  &__cardIcon {
+    width: 33px;
+  }
 
-    &-text {
-      margin-top: 90px;
-      color: #fff;
-      font-weight: 700;
-    }
+  &__cardText {
+    margin-top: 90px;
+    color: #fff;
+    font-weight: 700;
+  }
 
-    &-members {
-      font-size: 15px;
-      line-height: 140%;
-    }
+  &__cardMembers {
+    font-size: 15px;
+    line-height: 140%;
+  }
 
-    &-count {
-      font-size: 40px;
-      line-height: 100%;
-    }
+  &__cardCount {
+    font-size: 40px;
+    line-height: 100%;
   }
 }

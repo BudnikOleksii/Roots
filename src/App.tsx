@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.scss';
+import styles from './App.module.scss';
 import { Header } from './Header';
 import { TeamSection } from './TeamSection';
 import { SectionForm } from './SectionForm';
@@ -9,7 +9,7 @@ import { Footer } from './Footer';
 
 export const App: React.FC = () => {
   return (
-    <div className="app">
+    <div className={styles.app}>
       <Header />
       <TeamSection />
       <SectionForm />

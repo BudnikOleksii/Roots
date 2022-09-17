@@ -1,18 +1,18 @@
 import { FC, useState } from 'react';
 import locationIcon from './location-icon.svg';
-import './searchInput.scss';
+import styles from './SearchInput.module.scss';
 import { ButtonMain } from '../ButtonMain';
 
 export const SearchInput: FC = () => {
   const [place, setPlace] = useState('');
 
   return (
-    <div className="searchInput">
-      <label className="searchInput__label" htmlFor="search-input">
-        <img className="searchInput__icon" src={locationIcon} alt="location-icon" />
+    <div className={styles.searchInput}>
+      <label className={styles.searchInput__label} htmlFor="search-input">
+        <img className={styles.searchInput__icon} src={locationIcon} alt="location-icon" />
         <input
           id="search-input"
-          className="searchInput__input"
+          className={styles.searchInput__input}
           type="text"
           placeholder="Find the place to help"
           value={place}

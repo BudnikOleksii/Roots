@@ -1,10 +1,10 @@
 import { FC } from 'react';
-import './sectionPlaces.scss';
+import styles from './SectionPlaces.module.scss';
 import { SwiperSlider } from '../SwiperSlider';
 
 export const SectionPlaces: FC = () => {
   return (
-    <section className="places" id="places">
+    <section className={styles.places} id="places">
       <SwiperSlider />
     </section>
   );

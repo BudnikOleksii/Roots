@@ -18,7 +18,7 @@
     }
   }
 
-  &__img-block {
+  &__imgBlock {
     margin-top: 40px;
     position: relative;
 
@@ -32,18 +32,18 @@
     max-width: 200px;
     margin-bottom: 20px;
 
-    &--2 {
-      margin-left: auto;
-      display: block;
-
-      @media (min-width: 768px) {
-        margin-left: 0;
-        margin-top: 50px;
-      }
-    }
-
     @media (min-width: 1200px) {
       max-width: initial;
+    }
+  }
+
+  &__personSecond {
+    margin-left: auto;
+    display: block;
+
+    @media (min-width: 768px) {
+      margin-left: 0;
+      margin-top: 50px;
     }
   }
 
@@ -51,36 +51,36 @@
     position: absolute;
     max-width: 230px;
     z-index: -1;
+  }
 
-    &--1 {
-      transform: rotate(40deg);
-      top: 80px;
-      left: 100px;
+  &__connectFirst {
+    transform: rotate(40deg);
+    top: 80px;
+    left: 100px;
 
-      @media (min-width: 768px) {
-        transform: rotate(0deg);
-        left: 19%;
-      }
-
-      @media (min-width: 1200px) {
-        left: 23%;
-      }
+    @media (min-width: 768px) {
+      transform: rotate(0deg);
+      left: 19%;
     }
 
-    &--2 {
-      transform: rotate(-80deg);
-      left: -10px;
-      top: 300px;
+    @media (min-width: 1200px) {
+      left: 23%;
+    }
+  }
 
-      @media (min-width: 768px) {
-        transform: rotate(172deg);
-        top: 34%;
-        left: 57%;
-      }
+  &__connectSecond {
+    transform: rotate(-80deg);
+    left: -10px;
+    top: 300px;
 
-      @media (min-width: 1200px) {
-        left: 62%;
-      }
+    @media (min-width: 768px) {
+      transform: rotate(172deg);
+      top: 34%;
+      left: 57%;
+    }
+
+    @media (min-width: 1200px) {
+      left: 62%;
     }
   }
 }

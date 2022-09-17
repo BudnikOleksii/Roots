@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import { FC, useState } from 'react';
-import './loginForm.scss';
 import classNames from 'classnames';
+import styles from './LoginForm.module.scss';
 import { ButtonMain } from '../ButtonMain';
 import shape1 from './shape1.svg';
 import shape2 from './shape2.svg';
@@ -13,15 +13,15 @@ export const LoginForm: FC = () => {
   const [isEmailValid, setIsEmailValid] = useState(true);
 
   return (
-    <form className="login-form">
-      <h3 className="login-form__heading">Log in</h3>
-      <img className="login-form__shape login-form__shape--1" src={shape1} alt="shape" />
-      <img className="login-form__shape login-form__shape--2" src={shape2} alt="shape" />
+    <form className={styles.loginForm}>
+      <h3 className={styles.loginForm__heading}>Log in</h3>
+      <img className={styles.loginForm__shapeFirst} src={shape1} alt="shape" />
+      <img className={styles.loginForm__shapeSecond} src={shape2} alt="shape" />
 
-      <label className="login-form__field">
+      <label className={styles.loginForm__field}>
         <input
-          className={classNames('login-form__input', {
-            'login-form__input--invalid': !isLoginValid,
+          className={classNames(`${styles.loginForm__input}`, {
+            [`${styles.loginForm__inputInvalid}`]: !isLoginValid,
           })}
           type="text"
           placeholder="Name"
@@ -38,10 +38,14 @@ export const LoginForm: FC = () => {
         />
       </label>
 
-      <label className="login-form__field mb-32">
+      <label className={classNames(
+        `${styles.loginForm__field}`,
+        `${styles.mb32}`,
+      )}
+      >
         <input
-          className={classNames('login-form__input', {
-            'login-form__input--invalid': !isEmailValid,
+          className={classNames(`${styles.loginForm__input}`, {
+            [`${styles.loginForm__inputInvalid}`]: !isEmailValid,
           })}
           type="email"
           placeholder="Email"

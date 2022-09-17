@@ -1,7 +1,7 @@
 .accordion {
   overflow: hidden;
 
-  &__main-block {
+  &__mainBlock {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -24,11 +24,11 @@
     color: #1E1A20;
     opacity: 0;
     transition: max-height 0.4s, opacity 0.4s;
+  }
 
-    &--active {
-      max-height: max-content;
-      opacity: 0.9;
-    }
+  &__textActive {
+    max-height: max-content;
+    opacity: 0.9;
   }
 
   &__button {
@@ -50,10 +50,10 @@
     height: 2px;
     background-color: #fff;
     transition: transform 0.4s;
+  }
 
-    &--active {
-      transform: rotate(90deg);
-    }
+  &__lineActive {
+    transform: rotate(90deg);
   }
 
   &__divider {

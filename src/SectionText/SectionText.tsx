@@ -1,12 +1,12 @@
 import { FC } from 'react';
-import './sectionText.scss';
+import styles from './SectionText.module.scss';
 
 type Props = {
   text: string;
 };
 
 export const SectionText: FC<Props> = ({ text }) => (
-  <p className="section-text">
+  <p className={styles.sectionText}>
     {text}
   </p>
 );

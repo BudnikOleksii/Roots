@@ -1,0 +1,21 @@
+.slide {
+  position: relative;
+  width: 200px;
+
+  @media (min-width: 768px) {
+    width: 280px;
+  }
+
+  &__heading {
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    opacity: 0.9;
+  }
+}

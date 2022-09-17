@@ -16,23 +16,6 @@
     transform: translateX(0);
   }
 
-  &--mobile {
-    position: absolute;
-    z-index: 100;
-
-    @media (min-width: 667px) {
-      padding: 20px;
-    }
-
-    @media (min-width: 1024px) {
-      display: none;
-    }
-  }
-
-  &--active {
-    transform: translateX(0);
-  }
-
   @media (min-width: 667px) {
     flex-direction: row;
     height: min-content;
@@ -66,10 +49,6 @@
     opacity: 0.9;
     position: relative;
 
-    &--home {
-      font-weight: 700;
-    }
-
     @media (min-width: 667px) {
       font-size: 16px;
     }
@@ -95,6 +74,10 @@
         right: 0;
       }
     }
+  }
+
+  &__linkHome {
+    font-weight: 700;
   }
 
   &__btn {
@@ -126,4 +109,21 @@
       color: #fff;
     }
   }
+}
+
+.menuMobile {
+  position: absolute;
+  z-index: 100;
+
+  @media (min-width: 667px) {
+    padding: 20px;
+  }
+
+  @media (min-width: 1024px) {
+    display: none;
+  }
+}
+
+.menuActive {
+  transform: translateX(0);
 }
